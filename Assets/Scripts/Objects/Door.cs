@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Door : MonoBehaviour
 {
     Animator animator;
-    public GameObject gameObject;
+    public new GameObject gameObject;
     public string NameScene;
     bool Entry = false;
     void Start()

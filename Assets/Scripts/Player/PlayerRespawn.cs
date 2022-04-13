@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerRespawn : MonoBehaviour
 {
-    Transform transform;
+    new Transform transform;
     Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -16,8 +16,9 @@ public class PlayerRespawn : MonoBehaviour
     {
         if (collision.transform.CompareTag("Enemy"))
         {
-            transform.position = new Vector3(-0.97f, -0.39f);
             animator.SetBool("Hit", true);
+            transform.position = new Vector3(-0.97f, -0.39f);
+            
         }
         else
         {
